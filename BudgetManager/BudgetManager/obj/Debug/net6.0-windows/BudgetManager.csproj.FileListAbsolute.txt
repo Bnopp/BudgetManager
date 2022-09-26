@@ -4,12 +4,10 @@ C:\Users\pl03jlu\Documents\GitHub\BudgetManager\BudgetManager\BudgetManager\bin\
 C:\Users\pl03jlu\Documents\GitHub\BudgetManager\BudgetManager\BudgetManager\bin\Debug\net6.0-windows\BudgetManager.dll
 C:\Users\pl03jlu\Documents\GitHub\BudgetManager\BudgetManager\BudgetManager\bin\Debug\net6.0-windows\BudgetManager.pdb
 C:\Users\pl03jlu\Documents\GitHub\BudgetManager\BudgetManager\BudgetManager\obj\Debug\net6.0-windows\BudgetManager.csproj.AssemblyReference.cache
-C:\Users\pl03jlu\Documents\GitHub\BudgetManager\BudgetManager\BudgetManager\obj\Debug\net6.0-windows\MainWindow.g.cs
 C:\Users\pl03jlu\Documents\GitHub\BudgetManager\BudgetManager\BudgetManager\obj\Debug\net6.0-windows\App.g.cs
 C:\Users\pl03jlu\Documents\GitHub\BudgetManager\BudgetManager\BudgetManager\obj\Debug\net6.0-windows\BudgetManager_MarkupCompile.cache
 C:\Users\pl03jlu\Documents\GitHub\BudgetManager\BudgetManager\BudgetManager\obj\Debug\net6.0-windows\BudgetManager_MarkupCompile.lref
 C:\Users\pl03jlu\Documents\GitHub\BudgetManager\BudgetManager\BudgetManager\obj\Debug\net6.0-windows\App.baml
-C:\Users\pl03jlu\Documents\GitHub\BudgetManager\BudgetManager\BudgetManager\obj\Debug\net6.0-windows\MainWindow.baml
 C:\Users\pl03jlu\Documents\GitHub\BudgetManager\BudgetManager\BudgetManager\obj\Debug\net6.0-windows\BudgetManager.g.resources
 C:\Users\pl03jlu\Documents\GitHub\BudgetManager\BudgetManager\BudgetManager\obj\Debug\net6.0-windows\BudgetManager.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\pl03jlu\Documents\GitHub\BudgetManager\BudgetManager\BudgetManager\obj\Debug\net6.0-windows\BudgetManager.AssemblyInfoInputs.cache
@@ -20,3 +18,7 @@ C:\Users\pl03jlu\Documents\GitHub\BudgetManager\BudgetManager\BudgetManager\obj\
 C:\Users\pl03jlu\Documents\GitHub\BudgetManager\BudgetManager\BudgetManager\obj\Debug\net6.0-windows\BudgetManager.pdb
 C:\Users\pl03jlu\Documents\GitHub\BudgetManager\BudgetManager\BudgetManager\obj\Debug\net6.0-windows\BudgetManager.genruntimeconfig.cache
 C:\Users\pl03jlu\Documents\GitHub\BudgetManager\BudgetManager\BudgetManager\obj\Debug\net6.0-windows\ref\BudgetManager.dll
+C:\Users\pl03jlu\Documents\GitHub\BudgetManager\Budgetmanager\BudgetManager\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\pl03jlu\Documents\GitHub\BudgetManager\Budgetmanager\BudgetManager\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\pl03jlu\Documents\GitHub\BudgetManager\Budgetmanager\BudgetManager\obj\Debug\net6.0-windows\Pages\HomePage.g.cs
+C:\Users\pl03jlu\Documents\GitHub\BudgetManager\Budgetmanager\BudgetManager\obj\Debug\net6.0-windows\Pages\HomePage.baml

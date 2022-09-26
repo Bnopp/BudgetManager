@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\pl03jlu\Documents\GitHub\BudgetManager\BudgetManager\BudgetManager\obj\Debug\net6.0-windows\
+C:\Users\pl03jlu\Documents\GitHub\BudgetManager\Budgetmanager\BudgetManager\obj\Debug\net6.0-windows\
 BudgetManager
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-C:\Users\pl03jlu\Documents\GitHub\BudgetManager\BudgetManager\BudgetManager\App.xaml
-11407045341
+C:\Users\pl03jlu\Documents\GitHub\BudgetManager\Budgetmanager\BudgetManager\App.xaml
+21262450014
 
-71368908343
+8-25902595
 194-200944676
-MainWindow.xaml;
+MainWindow.xaml;Pages\HomePage.xaml;
 
-False
+True
 

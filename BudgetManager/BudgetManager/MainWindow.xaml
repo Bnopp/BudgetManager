@@ -5,14 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BudgetManager"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" Background="{DynamicResource BackgroundColor}">
+        Title="MainWindow" Height="450" Width="800"
+        Background="{StaticResource BackgroundColor}">
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="1.5*"/>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
-        <StackPanel Grid.Column="0">
-            <TextBlock Style="{StaticResource TitleSize}" Foreground="{DynamicResource ForegroundColor}" HorizontalAlignment="Center">WELCOME BACK!</TextBlock>
-        </StackPanel>
+        <Frame x:Name="MainFrame"/>
     </Grid>
 </Window>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BudgetManager.Pages;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,8 @@ namespace BudgetManager
         public MainWindow()
         {
             InitializeComponent();
+
+            MainFrame.Navigate(new HomePage());
         }
     }
 }
