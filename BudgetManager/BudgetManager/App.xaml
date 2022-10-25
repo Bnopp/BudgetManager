@@ -5,12 +5,11 @@
              StartupUri="MainWindow.xaml">
     <Application.Resources>
         <ResourceDictionary>
-            <SolidColorBrush x:Key="ForegroundColor">#FFF1F1F1</SolidColorBrush>
-            <SolidColorBrush x:Key="ForegroundHoverColor">#FF007ACC</SolidColorBrush>
-            <SolidColorBrush x:Key="BackgroundColor">#FF252526</SolidColorBrush>
-            <SolidColorBrush x:Key="BackgroundHoverColor">#FF3E3E40</SolidColorBrush>
-            <SolidColorBrush x:Key="BorderColor">#FF252526</SolidColorBrush>
-            <SolidColorBrush x:Key="BorderHoverColor">#FF3E3E40</SolidColorBrush>
+            <SolidColorBrush x:Key="MainBackgroundColor" Color="#1D1D1D"/>
+            <SolidColorBrush x:Key="MainTextColor" Color="#FFFFFF"/>
+            <SolidColorBrush x:Key="AccentColor" Color="#2B3FF2"/>
+            <SolidColorBrush x:Key="ContainerBackgroundColor" Color="#1A2028"/>
+            <SolidColorBrush x:Key="BorderColor" Color="#2C323C"/>
 
             <Style TargetType="Button" x:Key="ClearButton">
                 <Setter Property="TextBlock.TextAlignment" Value="Center"/>
@@ -27,7 +26,8 @@
                                       Content="{TemplateBinding Content}" 
                                       HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
                                       Margin="{TemplateBinding Padding}" 
-                                      VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                                      VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                                      />
                             </Border>
                         </ControlTemplate>
                     </Setter.Value>
@@ -37,9 +37,11 @@
                 <Setter Property="Background" Value="Transparent"/>
             </Style>
             <Style TargetType="Button" x:Key="MainButton" BasedOn="{StaticResource ClearButton}">
-                <Setter Property="Background" Value="{x:Static SystemParameters.WindowGlassBrush }"/>
-                <Setter Property="Border.CornerRadius" Value="5"/>
+                <Setter Property="Background" Value="{DynamicResource AccentColor}"/>
+                <Setter Property="Border.CornerRadius" Value="20"/>
                 <Setter Property="Padding" Value="10, 0, 10, 0"/>
+                <Setter Property="FontWeight" Value="DemiBold"/>
+                <Setter Property="FontSize" Value="16"/>
                 <Style.Triggers>
 
                     <!-- Animates the button's opacity on mouse over. -->
@@ -79,7 +81,7 @@
                                 <Storyboard>
                                     <ColorAnimation 
                                 Storyboard.TargetProperty="(Button.Background).(SolidColorBrush.Color)"
-                                From="#4854ac" To="White" Duration="0:0:0.15" AutoReverse="True" />
+                                From="#2B3FF2" To="White" Duration="0:0:0.1" AutoReverse="True" />
                                 </Storyboard>
                             </BeginStoryboard>
                         </EventTrigger.Actions>
@@ -88,8 +90,8 @@
             </Style>
             <SolidColorBrush x:Key="ProgressBar.Background" Color="#FFE6E6E6"/>
             <SolidColorBrush x:Key="ProgressBar.Border" Color="#FFBCBCBC"/>
-            <Style x:Key="ProgressBarCutom" TargetType="{x:Type ProgressBar}">
-                <Setter Property="Foreground" Value="{x:Static SystemParameters.WindowGlassBrush}"/>
+            <Style x:Key="ProgressBarCustom" TargetType="{x:Type ProgressBar}">
+                <Setter Property="Foreground" Value="{DynamicResource AccentColor}"/>
                 <Setter Property="Background" Value="{StaticResource ProgressBar.Background}"/>
                 <Setter Property="BorderBrush" Value="{StaticResource ProgressBar.Border}"/>
                 <Setter Property="BorderThickness" Value="1"/>
@@ -160,7 +162,7 @@
                 <Setter Property="Template">
                     <Setter.Value>
                         <ControlTemplate TargetType="{x:Type DataGrid}">
-                            <Border CornerRadius="10" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Padding="{TemplateBinding Padding}" SnapsToDevicePixels="True">
+                            <Border CornerRadius="10" Background="{DynamicResource BorderColor}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Padding="{TemplateBinding Padding}" SnapsToDevicePixels="True">
                                 <ScrollViewer x:Name="DG_ScrollViewer" Focusable="false">
                                     <ScrollViewer.Template>
                                         <ControlTemplate TargetType="{x:Type ScrollViewer}">

@@ -6,13 +6,13 @@
       xmlns:local="clr-namespace:BudgetManager.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="HomePage" Background="{StaticResource BackgroundColor}">
+      Title="HomePage" Background="{StaticResource MainBackgroundColor}">
     <Page.Resources>
         <Style TargetType="Label">
-            <Setter Property="Foreground" Value="{StaticResource ForegroundColor}"/>
+            <Setter Property="Foreground" Value="{StaticResource MainTextColor}"/>
         </Style>
         <Style TargetType="TextBlock">
-            <Setter Property="Foreground" Value="{StaticResource ForegroundColor}"/>
+            <Setter Property="Foreground" Value="{StaticResource MainTextColor}"/>
             <Setter Property="FontWeight" Value="Bold"/>
             <Setter Property="FontSize" Value="20"/>
         </Style>
@@ -53,7 +53,7 @@
                    Margin="0, 0, 0, 30"/>
             <TextBlock Text="You haven't reached your total limit yet"/>
             <TextBlock Text="Good Job!" Margin="0, 0, 0, 30"/>
-            <ProgressBar Style="{DynamicResource ProgressBarCutom}"
+            <ProgressBar Style="{DynamicResource ProgressBarCustom}"
                          x:Name="GeneralPG"
                          Height="20" Margin="0, 0, 0, 30" Value="67" 
                          Maximum="100"/>
@@ -66,17 +66,56 @@
                 <Button  HorizontalAlignment="Right" Height="40" Width="175" Content="Add Expense" Grid.Column="1"/>
             </Grid>
         </StackPanel>
-        <DataGrid Style="{DynamicResource DataGridStyleCustom}" Margin="10,0,10,0" Height="275" x:Name="dgPurchases" Grid.Column="1">
-            <DataGrid.Resources>
-                <Style TargetType="DataGridColumnHeader">
-                    <Setter Property="Background" Value="Red"/>
-                </Style>
-            </DataGrid.Resources>
-            <DataGrid.Columns>
-                <DataGridTextColumn Header="Name" Width="3*"/>
-                <DataGridTextColumn Header="Category" Width="2*"/>
-                <DataGridTextColumn Header="Amount" Width="*"/>
-            </DataGrid.Columns>
-        </DataGrid>
+        <StackPanel Grid.Column="1" VerticalAlignment="Center">
+            <TextBlock Text="Past Purchases" Margin="20,30,0,10"/>
+            <DataGrid Style="{DynamicResource DataGridStyleCustom}" Background="Transparent" Margin="10,0,10,0" Height="225" x:Name="dgPurchases"
+                  CanUserResizeColumns="False" 
+                      CanUserResizeRows="False" 
+                      CanUserReorderColumns="False" 
+                      CanUserSortColumns="False"
+                      ScrollViewer.CanContentScroll="False"
+                      RowHeaderWidth="0" SelectionMode="Single"
+                      AutoGenerateColumns="False"
+                      HorizontalScrollBarVisibility="Disabled"
+                      VerticalScrollBarVisibility="Visible"
+                      SelectionUnit="FullRow">
+                <DataGrid.Resources>
+                    <Style TargetType="DataGridColumnHeader">
+                        <Setter Property="Background" Value="Red"/>
+                    </Style>
+                </DataGrid.Resources>
+                <DataGrid.RowStyle>
+                    <Style TargetType="DataGridRow">
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="DataGridRow">
+                                    <Border CornerRadius="15" Background="{DynamicResource ContainerBackgroundColor}" Height="30" Margin="10,5,10,0" Padding="5" BorderThickness="1" BorderBrush="{DynamicResource BorderColor}">
+                                        <Grid>
+                                            <Grid.Resources>
+                                                <Style TargetType="TextBlock">
+                                                    <Setter Property="Foreground" Value="{DynamicResource MainTextColor}"/>
+                                                    <Setter Property="FontWeight" Value="SemiBold"/>
+                                                    <Setter Property="HorizontalAlignment" Value="Center"/>
+                                                </Style>
+                                            </Grid.Resources>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="*"/>
+                                                <ColumnDefinition Width="*"/>
+                                                <ColumnDefinition Width="*"/>
+                                                <ColumnDefinition Width="*"/>
+                                            </Grid.ColumnDefinitions>
+                                            <TextBlock Text="{Binding Title}" Grid.Column="0"/>
+                                            <TextBlock Text="{Binding Amount, StringFormat={}{0} CHF}" Grid.Column="1"/>
+                                            <TextBlock Text="{Binding Category}" Grid.Column="2"/>
+                                            <TextBlock Text="{Binding Date}" Grid.Column="3"/>
+                                        </Grid>
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </DataGrid.RowStyle>
+            </DataGrid>
+        </StackPanel>
     </Grid>
 </Page>

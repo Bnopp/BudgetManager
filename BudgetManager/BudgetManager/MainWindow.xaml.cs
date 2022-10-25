@@ -21,11 +21,30 @@ namespace BudgetManager
     /// </summary>
     public partial class MainWindow : Window
     {
+        private static Category catFood = new Category("Food", "Eating", 1000, new List<Payement>());
+
+        public List<Payement> payements = new List<Payement>()
+        {
+            new Payement("McDonalds", 12.58, catFood.Name, DateTime.Now.ToShortDateString()),
+            new Payement("V Poi", 12.58, catFood.Name, DateTime.Now.ToShortDateString()),
+            new Payement("McDonalds", 12.58, catFood.Name, DateTime.Now.ToShortDateString()),
+            new Payement("V Poi", 12.58, catFood.Name, DateTime.Now.ToShortDateString()),
+            new Payement("V Poi", 12.58, catFood.Name, DateTime.Now.ToShortDateString()),
+            new Payement("V Poi", 12.58, catFood.Name, DateTime.Now.ToShortDateString()),
+            new Payement("McDonalds", 12.58, catFood.Name, DateTime.Now.ToShortDateString()),
+            new Payement("V Poi", 12.58, catFood.Name, DateTime.Now.ToShortDateString()),
+        };
+
+        public List<Payement> Payements { get { return payements; } }
+
         public MainWindow()
         {
             InitializeComponent();
 
-            MainFrame.Navigate(new HomePage());
+            HomePage homePage = new HomePage();
+            homePage.dgPurchases.ItemsSource = payements;
+
+            MainFrame.Navigate(homePage);
         }
     }
 }
