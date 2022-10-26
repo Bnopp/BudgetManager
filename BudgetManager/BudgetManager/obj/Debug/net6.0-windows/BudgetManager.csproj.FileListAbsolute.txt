@@ -28,13 +28,11 @@ C:\Users\sergh\Documents\GitHub\BudgetManager\BudgetManager\BudgetManager\bin\De
 C:\Users\sergh\Documents\GitHub\BudgetManager\BudgetManager\BudgetManager\bin\Debug\net6.0-windows\BudgetManager.dll
 C:\Users\sergh\Documents\GitHub\BudgetManager\BudgetManager\BudgetManager\bin\Debug\net6.0-windows\BudgetManager.pdb
 C:\Users\sergh\Documents\GitHub\BudgetManager\BudgetManager\BudgetManager\obj\Debug\net6.0-windows\BudgetManager.csproj.AssemblyReference.cache
-C:\Users\sergh\Documents\GitHub\BudgetManager\BudgetManager\BudgetManager\obj\Debug\net6.0-windows\MainWindow.g.cs
 C:\Users\sergh\Documents\GitHub\BudgetManager\BudgetManager\BudgetManager\obj\Debug\net6.0-windows\Pages\HomePage.g.cs
 C:\Users\sergh\Documents\GitHub\BudgetManager\BudgetManager\BudgetManager\obj\Debug\net6.0-windows\App.g.cs
 C:\Users\sergh\Documents\GitHub\BudgetManager\BudgetManager\BudgetManager\obj\Debug\net6.0-windows\BudgetManager_MarkupCompile.cache
 C:\Users\sergh\Documents\GitHub\BudgetManager\BudgetManager\BudgetManager\obj\Debug\net6.0-windows\BudgetManager_MarkupCompile.lref
 C:\Users\sergh\Documents\GitHub\BudgetManager\BudgetManager\BudgetManager\obj\Debug\net6.0-windows\App.baml
-C:\Users\sergh\Documents\GitHub\BudgetManager\BudgetManager\BudgetManager\obj\Debug\net6.0-windows\MainWindow.baml
 C:\Users\sergh\Documents\GitHub\BudgetManager\BudgetManager\BudgetManager\obj\Debug\net6.0-windows\Pages\HomePage.baml
 C:\Users\sergh\Documents\GitHub\BudgetManager\BudgetManager\BudgetManager\obj\Debug\net6.0-windows\BudgetManager.g.resources
 C:\Users\sergh\Documents\GitHub\BudgetManager\BudgetManager\BudgetManager\obj\Debug\net6.0-windows\BudgetManager.GeneratedMSBuildEditorConfig.editorconfig
@@ -46,3 +44,11 @@ C:\Users\sergh\Documents\GitHub\BudgetManager\BudgetManager\BudgetManager\obj\De
 C:\Users\sergh\Documents\GitHub\BudgetManager\BudgetManager\BudgetManager\obj\Debug\net6.0-windows\BudgetManager.pdb
 C:\Users\sergh\Documents\GitHub\BudgetManager\BudgetManager\BudgetManager\obj\Debug\net6.0-windows\BudgetManager.genruntimeconfig.cache
 C:\Users\sergh\Documents\GitHub\BudgetManager\BudgetManager\BudgetManager\obj\Debug\net6.0-windows\ref\BudgetManager.dll
+C:\Users\sergh\Documents\GitHub\BudgetManager\BudgetManager\BudgetManager\obj\Debug\net6.0-windows\Pages\SetUpPage.g.cs
+C:\Users\sergh\Documents\GitHub\BudgetManager\BudgetManager\BudgetManager\obj\Debug\net6.0-windows\Pages\SetUpPage.baml
+C:\Users\sergh\Documents\GitHub\BudgetManager\BudgetManager\BudgetManager\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\sergh\Documents\GitHub\BudgetManager\BudgetManager\BudgetManager\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\sergh\Documents\GitHub\BudgetManager\BudgetManager\BudgetManager\obj\Debug\net6.0-windows\Windows\CategoryWindows.g.cs
+C:\Users\sergh\Documents\GitHub\BudgetManager\BudgetManager\BudgetManager\obj\Debug\net6.0-windows\Windows\CategoryWindows.baml
+C:\Users\sergh\Documents\GitHub\BudgetManager\BudgetManager\BudgetManager\obj\Debug\net6.0-windows\Windows\DeleteCategoryWindow.g.cs
+C:\Users\sergh\Documents\GitHub\BudgetManager\BudgetManager\BudgetManager\obj\Debug\net6.0-windows\Windows\DeleteCategoryWindow.baml

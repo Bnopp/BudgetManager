@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\sergh\Documents\GitHub\BudgetManager\BudgetManager\BudgetManager\App.xaml
-21262450014
+5-1426168911
 
-8-25902595
+11-1295084246
 194-1103864946
-MainWindow.xaml;Pages\HomePage.xaml;
+MainWindow.xaml;Pages\HomePage.xaml;Pages\SetUpPage.xaml;Windows\CategoryWindows.xaml;Windows\DeleteCategoryWindow.xaml;
 
-False
+True
 

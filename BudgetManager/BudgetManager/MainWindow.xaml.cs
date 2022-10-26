@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Controls.Ribbon.Primitives;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
@@ -21,30 +22,36 @@ namespace BudgetManager
     /// </summary>
     public partial class MainWindow : Window
     {
-        private static Category catFood = new Category("Food", "Eating", 1000, new List<Payement>());
 
-        public List<Payement> payements = new List<Payement>()
+        private static List<Category> categories = new List<Category>() 
         {
-            new Payement("McDonalds", 12.58, catFood.Name, DateTime.Now.ToShortDateString()),
-            new Payement("V Poi", 12.58, catFood.Name, DateTime.Now.ToShortDateString()),
-            new Payement("McDonalds", 12.58, catFood.Name, DateTime.Now.ToShortDateString()),
-            new Payement("V Poi", 12.58, catFood.Name, DateTime.Now.ToShortDateString()),
-            new Payement("V Poi", 12.58, catFood.Name, DateTime.Now.ToShortDateString()),
-            new Payement("V Poi", 12.58, catFood.Name, DateTime.Now.ToShortDateString()),
-            new Payement("McDonalds", 12.58, catFood.Name, DateTime.Now.ToShortDateString()),
-            new Payement("V Poi", 12.58, catFood.Name, DateTime.Now.ToShortDateString()),
+            new Category("Food", 1000),
+            new Category("Games", 1000),
+            new Category("Going Out", 1000),
+            new Category("Drinks", 1000)
         };
 
-        public List<Payement> Payements { get { return payements; } }
+        private List<Payement> payements = new List<Payement>()
+        {
+            new Payement("McDonalds", 12.58, categories[0].Name, DateTime.Now.ToShortDateString()),
+            new Payement("V Poi", 12.58, categories[0].Name, DateTime.Now.ToShortDateString()),
+            new Payement("McDonalds", 12.58, categories[0].Name, DateTime.Now.ToShortDateString()),
+            new Payement("V Poi", 12.58, categories[0].Name, DateTime.Now.ToShortDateString()),
+            new Payement("V Poi", 12.58, categories[0].Name, DateTime.Now.ToShortDateString()),
+            new Payement("V Poi", 12.58, categories[0].Name, DateTime.Now.ToShortDateString()),
+            new Payement("McDonalds", 12.58, categories[0].Name, DateTime.Now.ToShortDateString()),
+            new Payement("V Poi", 12.58, categories[0].Name, DateTime.Now.ToShortDateString()),
+        };
+
+        public List<Category> Categories { get { return categories; } set { categories = value; } }
+        public List<Payement> Payements { get { return payements; } set { payements = value; } }
 
         public MainWindow()
         {
             InitializeComponent();
 
-            HomePage homePage = new HomePage();
-            homePage.dgPurchases.ItemsSource = payements;
-
-            MainFrame.Navigate(homePage);
+            //MainFrame.Navigate(new homePage());
+            MainFrame.Navigate(new SetUpPage());
         }
     }
 }

@@ -23,6 +23,8 @@ namespace BudgetManager.Pages
         public HomePage()
         {
             InitializeComponent();
+
+            dgPurchases.ItemsSource = (Application.Current.MainWindow as MainWindow).Payements;
         }
     }
 }
