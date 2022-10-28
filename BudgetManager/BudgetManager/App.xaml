@@ -41,7 +41,7 @@
                 <Setter Property="Border.CornerRadius" Value="20"/>
                 <Setter Property="Padding" Value="10, 0, 10, 0"/>
                 <Setter Property="FontWeight" Value="DemiBold"/>
-                <Setter Property="FontSize" Value="16"/>
+                <Setter Property="FontSize" Value="12"/>
                 <Style.Triggers>
 
                     <!-- Animates the button's opacity on mouse over. -->

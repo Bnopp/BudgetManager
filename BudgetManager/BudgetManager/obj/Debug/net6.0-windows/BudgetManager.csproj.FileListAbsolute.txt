@@ -52,3 +52,9 @@ C:\Users\sergh\Documents\GitHub\BudgetManager\BudgetManager\BudgetManager\obj\De
 C:\Users\sergh\Documents\GitHub\BudgetManager\BudgetManager\BudgetManager\obj\Debug\net6.0-windows\Windows\CategoryWindows.baml
 C:\Users\sergh\Documents\GitHub\BudgetManager\BudgetManager\BudgetManager\obj\Debug\net6.0-windows\Windows\DeleteCategoryWindow.g.cs
 C:\Users\sergh\Documents\GitHub\BudgetManager\BudgetManager\BudgetManager\obj\Debug\net6.0-windows\Windows\DeleteCategoryWindow.baml
+C:\Users\sergh\Documents\GitHub\BudgetManager\BudgetManager\BudgetManager\obj\Debug\net6.0-windows\Windows\AddExpenseWindow.g.cs
+C:\Users\sergh\Documents\GitHub\BudgetManager\BudgetManager\BudgetManager\obj\Debug\net6.0-windows\Windows\AddExpenseWindow.baml
+C:\Users\sergh\Documents\GitHub\BudgetManager\BudgetManager\BudgetManager\obj\Debug\net6.0-windows\Pages\ProgressPage.g.cs
+C:\Users\sergh\Documents\GitHub\BudgetManager\BudgetManager\BudgetManager\obj\Debug\net6.0-windows\Pages\ProgressPage.baml
+C:\Users\sergh\Documents\GitHub\BudgetManager\BudgetManager\BudgetManager\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+C:\Users\sergh\Documents\GitHub\BudgetManager\BudgetManager\BudgetManager\obj\Debug\net6.0-windows\BudgetManager.csproj.CopyComplete

@@ -13,7 +13,13 @@
     <Compile Update="Pages\HomePage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Pages\ProgressPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Pages\SetUpPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Windows\AddExpenseWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Windows\CategoryWindows.xaml.cs">
@@ -30,7 +36,13 @@
     <Page Update="Pages\HomePage.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Pages\ProgressPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Pages\SetUpPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Windows\AddExpenseWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Windows\CategoryWindows.xaml">

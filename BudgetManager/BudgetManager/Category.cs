@@ -12,9 +12,14 @@ namespace BudgetManager
         private double _limit;
         private List<Payement> _payments = new List<Payement>();
 
-        public string Name { get { return _name; } }
+        public string Name { get { return _name; } set { _name = value; } }
         public double Limit { get { return _limit; } set { _limit = value; } }
         public List<Payement> Payments { get { return _payments; } set { _payments = value; } }
+
+        public Category()
+        {
+
+        }
 
         public Category(string name, double limit)
         {

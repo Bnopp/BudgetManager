@@ -5,9 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BudgetManager"
         mc:Ignorable="d"
-        Title="MainWindow" Height="400" Width="800"
-        Background="{StaticResource MainBackgroundColor}">
+        Title="Budget Manager" Height="400" Width="800"
+        Background="{StaticResource MainBackgroundColor}"
+        Closed="Window_Closed">
     <Grid>
-        <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden"    VerticalAlignment="Center"/>
+        <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden" VerticalAlignment="Center"/>
     </Grid>
 </Window>

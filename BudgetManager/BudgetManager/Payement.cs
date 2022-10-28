@@ -13,10 +13,15 @@ namespace BudgetManager
         private string _category;
         private string _date;
         
-        public string Title { get { return _title; } }
-        public double Amount { get { return _amount; } }
-        public string Category { get { return _category; } }
-        public string Date { get { return _date; } }
+        public string Title { get { return _title; } set { _title = value; } }
+        public double Amount { get { return _amount; } set { _amount = value; } }
+        public string Category { get { return _category; } set { _category = value; } }
+        public string Date { get { return _date; } set { _date = value; } }
+
+        public Payement()
+        {
+
+        }
 
         public Payement(string title, double amount, string category, string date)
         {

@@ -1,0 +1,54 @@
+﻿<Window x:Class="BudgetManager.Windows.AddExpenseWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BudgetManager.Windows"
+        mc:Ignorable="d"
+        Title="Add Expense" Height="300" Width="400"
+        Background="{DynamicResource MainBackgroundColor}"
+        WindowStyle="ToolWindow">
+    <Window.Resources>
+        <Style TargetType="TextBox">
+            <Setter Property="Background" Value="{DynamicResource ContainerBackgroundColor}"/>
+            <Setter Property="Height" Value="35"/>
+            <Setter Property="TextAlignment" Value="Left"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="Foreground" Value="{DynamicResource MainTextColor}"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="Margin" Value="10,10,10,0"/>
+        </Style>
+        <Style TargetType="TextBlock">
+            <Setter Property="Foreground" Value="{StaticResource MainTextColor}"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="Margin" Value="10,10,10,0"/>
+        </Style>
+        <Style TargetType="Button" BasedOn="{StaticResource MainButton}"/>
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Grid.Column="0">
+            <TextBlock Text="Name"/>
+            <TextBox x:Name="tbName"/>
+        </StackPanel>
+        <StackPanel Grid.Row="0" Grid.Column="1">
+            <TextBlock Text="Amount"/>
+            <TextBox x:Name="tbAmount" />
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.ColumnSpan="2">
+            <TextBlock Text="Category"/>
+            <ComboBox Style="{DynamicResource ComboBoxRoundedCornersStyle}" Margin="10,10,10,0" x:Name="cbCats"/>
+        </StackPanel>
+        <Button Content="Add" HorizontalAlignment="Center" Width="90" Height="35" Grid.Row="2" Grid.ColumnSpan="2" Click="Button_Click"/>
+    </Grid>
+</Window>

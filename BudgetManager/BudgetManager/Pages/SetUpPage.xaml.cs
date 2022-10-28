@@ -75,7 +75,7 @@ namespace BudgetManager.Pages
 
         private void btnDelete_Click(object sender, RoutedEventArgs e)
         {
-            if ((Application.Current.MainWindow as MainWindow).Categories.Count > 0)
+            if ((Application.Current.MainWindow as MainWindow).Categories.Count > 1)
             {
                 DeleteCategoryWindow dcw = new DeleteCategoryWindow((Application.Current.MainWindow as MainWindow).Categories);
                 dcw.ShowDialog();
@@ -87,7 +87,7 @@ namespace BudgetManager.Pages
             }
             else
             {
-                MessageBox.Show("You must have at least one existant category to be able to delete one");
+                MessageBox.Show("You must have at least one existant category at all times");
             }
         }
 

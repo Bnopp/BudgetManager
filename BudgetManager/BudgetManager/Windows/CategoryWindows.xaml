@@ -39,7 +39,7 @@
         </StackPanel>
         <StackPanel Grid.Row="1">
             <TextBlock Text="Budget Limit"/>
-            <TextBox x:Name="tbLimit" PreviewTextInput="TextBox_PreviewTextInput"/>
+            <TextBox x:Name="tbLimit" />
         </StackPanel>
         <Button Content="Create" HorizontalAlignment="Center" Width="90" Height="35" Grid.Row="2" Click="Button_Click"/>
     </Grid>

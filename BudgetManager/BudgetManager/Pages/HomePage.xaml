@@ -49,10 +49,10 @@
         </Grid.ColumnDefinitions>
         <StackPanel Grid.Column="0" VerticalAlignment="Center" 
                     HorizontalAlignment="Center" Margin="10, 0, 10, 0">
-            <Label Content="Welcome Back!" FontSize="45" FontWeight="Bold"
+            <Label Content="Welcome!" FontSize="45" FontWeight="Bold"
                    Margin="0, 0, 0, 30"/>
-            <TextBlock Text="You haven't reached your total limit yet"/>
-            <TextBlock Text="Good Job!" Margin="0, 0, 0, 30"/>
+            <TextBlock Text="This is your current progress for the month" TextWrapping="Wrap"/>
+            <TextBlock x:Name="tbGenProgress" Text="67/100" Margin="0, 0, 0, 30"/>
             <Grid Margin="0,0,0,30">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="5*"/>
@@ -62,15 +62,17 @@
                          x:Name="GeneralPG"
                          Height="20" Value="67" 
                          Maximum="100" Grid.Column="0" VerticalAlignment="Center"/>
-                <TextBlock Text="{Binding ElementName=GeneralPG, Path=Value, StringFormat={}{0:0}%}" HorizontalAlignment="Center" VerticalAlignment="Top" Grid.Column="1"/>
+                <TextBlock Name="tbProgress" Text="67%" HorizontalAlignment="Center" VerticalAlignment="Top" Grid.Column="1"/>
             </Grid>
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                <Button HorizontalAlignment="Left" Height="40" Width="175" Content="Check Progress" Grid.Column="0"/>
-                <Button  HorizontalAlignment="Right" Height="40" Width="175" Content="Add Expense" Grid.Column="1"/>
+                <Button HorizontalAlignment="Center" Height="40" Width="115" Content="Check Progress" Click="ProgressButton_Click" Grid.Column="0"/>
+                <Button HorizontalAlignment="Center" Height="40" Width="115" Content="Add Expense" Click="AddExpenseButton_Click" Grid.Column="1"/>
+                <Button HorizontalAlignment="Center" Height="40" Width="115" Content="Set Up" Click="SetupButton_Click"  Grid.Column="2"/>
             </Grid>
         </StackPanel>
         <StackPanel Grid.Column="1" VerticalAlignment="Center">
